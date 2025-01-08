@@ -42,9 +42,9 @@ async def start_message(message):
 async def get_buying_list(message):
     product_images = [
         ('Astragalus Extract', 'Экстракт Астрагала 500 мг - 90 капсул', 100, 'files/product1.jpg'),
-        ('Adam', 'Адам, Витамины для Мужчин Комплекс - 90 вегетарианских капсул', 200, 'files/product2.png'),
-        ('OralBiotic', 'Оральный Биотик - 60 таблеток для рассасывания', 300, 'files/product3.png'),
-        ('Quercetin & Bromelain', 'Кверцетин и Бромелаин - 120 капсул', 400, 'files/product4.png'),
+        ('Adam', 'Адам, Витамины для Мужчин Комплекс - 90 вегетарианских капсул', 200, 'files/product2.jpg'),
+        ('OralBiotic', 'Оральный Биотик - 60 таблеток для рассасывания', 300, 'files/product3.jpg'),
+        ('Quercetin & Bromelain', 'Кверцетин и Бромелаин - 120 капсул', 400, 'files/product4.jpg'),
     ]
     for name, description, price, img_path in product_images:
         await message.answer(f'Название: {name} | Описание: {description} | Цена: {price}')
